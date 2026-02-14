@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Love Test ❤️</title>
+<style>
+
+body{
+    background: linear-gradient(to right,#ff758c,#ff7eb3);
+    text-align:center;
+    font-family:sans-serif;
+    color:white;
+    padding-top:80px;
+}
+
+button{
+    padding:12px 25px;
+    font-size:16px;
+    border:none;
+    border-radius:25px;
+    margin:10px;
+    cursor:pointer;
+}
+
+.yes{background:#ff004c;color:white;}
+.no{background:white;color:black;}
+
+.quiz{display:none;}
+
+.question{
+    margin:40px 0;
+}
+
+.options button{
+    display:block;
+    margin:10px auto;
+    width:250px;
+}
+
+</style>
+</head>
+<body>
+
+<h1 id="mainQuestion">Do you love me? 😏❤️</h1>
+
+<button class="yes" onclick="startQuiz()">Yes 💕</button>
+<button class="no" id="noBtn" onclick="growYes()">No 😤</button>
+
+<div class="quiz" id="quiz">
+<h2>Love Quiz Time 💌</h2>
+
+<!-- Question Template -->
+<div class="question">
+<p>1. Who loves you the most?</p>
+<div class="options">
+<button onclick="correct()">You ❤️</button>
+<button onclick="wrong()">My friends</button>
+<button onclick="wrong()">My phone</button>
+<button onclick="wrong()">Nobody</button>
+</div>
+</div>
+
+<div class="question">
+<p>2.which food shriya likes most</p>
+<div class="options">
+<button onclick="correct()">dosa</button>
+<button onclick="wrong()">pizza</button>
+<button onclick="wrong()">biriyani</button>
+<button onclick="wrong()">parota</button>
+</div>
+</div>
+
+<div class="question">
+<p>3.who does shriya likes most?</p>
+<div class="options">
+<button onclick="correct()">Vikasini,you</button>
+<button onclick="wrong()">rathi mam</button>
+<button onclick="wrong()">kokila mam</button>
+<button onclick="wrong()">ishman sir</button>
+</div>
+</div>
+
+<div class="question">
+<p>4. what does shriya like most?</p>
+<div class="options">
+<button onclick="correct()">eating</button>
+<button onclick="wrong()">sleeping</button>
+<button onclick="wrong()">studying</button>
+<button onclick="wrong()">No idea</button>
+</div>
+</div>
+
+<div class="question">
+<p>5. which fruit attracts shriya most?</p>
+<div class="options">
+<button onclick="correct()">lemon</button>
+<button onclick="wrong()">apple</button>
+<button onclick="wrong()">papaya</button>
+<button onclick="wrong()">orange</button>
+</div>
+</div>
+
+<div class="question">
+<p>6. What does shriya gave u first</p>
+<div class="options">
+<button onclick="correct()">ring</button>
+<button onclick="wrong()">shirt</button>
+<button onclick="wrong()">chocolate</button>
+<button onclick="wrong()">nothing</button>
+</div>
+</div>
+
+<div class="question">
+<p>7. When did shriya propose u</p>
+<div class="options">
+<button onclick="correct()">aug 3</button>
+<button onclick="wrong()">sep 31</button>
+<button onclick="wrong()">jan 4</button>
+<button onclick="wrong()">didn't propose</button>
+</div>
+</div>
+
+<div class="question">
+<p>8. Which thing shriya likes most?</p>
+<div class="options">
+<button onclick="correct()">earring</button>
+<button onclick="wrong()">toy</button>
+<button onclick="wrong()">bangles</button>
+<button onclick="wrong()">nothing</button>
+</div>
+</div>
+
+<div class="question">
+<p>9. which ice cream shriya likes most?</p>
+<div class="options">
+<button onclick="correct()">tender coconut</button>
+<button onclick="wrong()">butter scotch</button>
+<button onclick="wrong()">vanila</button>
+<button onclick="wrong()">chocolate</button>
+</div>
+</div>
+
+<div class="question">
+<p>10. What dress did shriya wore on ur first date?</p>
+<div class="options">
+<button onclick="finish()">black kurthi</button>
+<button onclick="wrong()">green crop top</button>
+<button onclick="wrong()">green kurthi</button>
+<button onclick="wrong()">baggy jean</button>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function growYes(){
+    const yesBtn=document.querySelector(".yes");
+    yesBtn.style.fontSize="35px";
+    yesBtn.style.padding="25px 50px";
+}
+
+function startQuiz(){
+    document.getElementById("mainQuestion").style.display="none";
+    document.querySelector(".yes").style.display="none";
+    document.getElementById("noBtn").style.display="none";
+    document.getElementById("quiz").style.display="block";
+}
+
+function correct(){
+    alert("Love you forever ❤️😘");
+}
+
+function wrong(){
+    alert("I hate you 😤");
+}
+
+function finish(){
+    alert("You passed my love test 😍");
+    window.location.href="final.html";
+}
+
+</script>
+
+</body>
+</html>
